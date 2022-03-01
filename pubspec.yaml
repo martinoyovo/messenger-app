@@ -1,0 +1,31 @@
+name: messenger_app
+description: A new Flutter project.
+version: 1.0.0+1
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.0
+  cached_network_image: ^3.1.0
+  flutter_svg: ^0.22.0
+  gap: ^2.0.0
+  percent_indicator: ^4.0.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+
+  fonts:
+
+    - family: General Sans
+      fonts:
+        - asset: assets/fonts/GeneralSans-Bold.otf
+        - asset: assets/fonts/GeneralSans-Italic.otf
+        - asset: assets/fonts/GeneralSans-Medium.otf
+        - asset: assets/fonts/GeneralSans-Regular.otf
+        - asset: assets/fonts/GeneralSans-Semibold.otf
