@@ -15,6 +15,7 @@ class ChatInnerItemWidget extends StatelessWidget {
   final bool? highlight;
 
   const ChatInnerItemWidget.name({
+    Key? key,
     this.isRight = false,
     this.highlight,
     this.image,
@@ -24,7 +25,7 @@ class ChatInnerItemWidget extends StatelessWidget {
     required this.readCount,
     required this.date,
     required this.likedCount,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
