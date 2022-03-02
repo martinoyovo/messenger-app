@@ -1,9 +1,14 @@
 # 🙈🙈 UI Design of the next Messenger💬 App ✍️
 
-Inspired by [@spaceberrry](https://www.figma.com/community/file/1076531551797581534)
-<p float="center">
-  <img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/Cover.png" width="100%" height="70%" />
-</p>
+### App Preview
+
+|              Home             |             Chat Screen           |             Chat Details           |
+| :----------------------------------: | :----------------------------------: |
+| <img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/1.png" width="350"> | <img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/2.png" width="350"> | <img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/2.png" width="350"> |
+
+##### [Design Template](https://www.figma.com/community/file/1076531551797581534)
+<img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/Cover.png"
+alt="Space Berrry" width="480" />
 
 ## Get Started
 Run:
@@ -14,13 +19,14 @@ flutter packages get
 flutter run
 ```
 
+## ⚡️ My Social Medias
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Twitter: [@martinoyovo](https://twitter.com/martinoyovo)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Instagram: [@martinoyovo](https://instagram.com/martinoyovo)
 
+Facebook: [@martinoyovo](https://www.facebook.com/yovo.martino)
 
-[Follow me for more content @martinoyovo](https://twitter.com/martinoyovo)
+LinkedIn: [@martinoyovo](https://linkedin.com/in/martino-yovo)
+
+GitHub: [@martinoyovo](https://github.com/martinoyovo)
