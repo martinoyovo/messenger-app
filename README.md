@@ -16,7 +16,7 @@ flutter run
 | <img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/1.png" width="350"> | <img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/3.png" width="350"> | <img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/2.png" width="350"> |
 
 ### Design Template
-<a src="https://www.figma.com/community/file/1076531551797581534"><img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/Cover.png"
+<a src="https://www.figma.com/community/file/1076531551797581534" target="_blank"><img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/Cover.png"
 alt="Space Berrry" width="60%" /></a>
 
 ### ⚡️ My Social Medias
