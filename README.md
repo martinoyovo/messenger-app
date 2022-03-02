@@ -6,12 +6,12 @@
 | :----------------------------------: | :----------------------------------: | :----------------------------------: |
 | <img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/1.png" width="350"> | <img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/2.png" width="350"> | <img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/2.png" width="350"> |
 
-##### [Design Template](https://www.figma.com/community/file/1076531551797581534)
-<img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/Cover.png"
-alt="Space Berrry" width="480" />
+### Design Template
+<a src="https://www.figma.com/community/file/1076531551797581534"><img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/Cover.png"
+alt="Space Berrry" width="60%" /></a>
 
-## Get Started
-Run:
+### Get Started
+
 ```shell
 git clone https://github.com/martinoyovo/messenger-app.git
 flutter clean
@@ -19,7 +19,7 @@ flutter packages get
 flutter run
 ```
 
-## ⚡️ My Social Medias
+### ⚡️ My Social Medias
 
 Twitter: [@martinoyovo](https://twitter.com/martinoyovo)
 
