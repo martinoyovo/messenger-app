@@ -1,4 +1,4 @@
-# 🙈🙈 This is the UI design of the next Messenger/Whatsapp💬✍️
+# 🙈🙈 UI Design of the next Messenger💬 App ✍️
 
 Inspired by [@spaceberrry](https://www.figma.com/community/file/1076531551797581534)
 <p float="center">
