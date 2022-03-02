@@ -10,24 +10,27 @@ class ActionList extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<Map<String, dynamic>> items = [
       {'icon': ImageConstant.imgIconsoundoff, 'text': 'Mute', 'trailing': 'No'},
-      {'icon': ImageConstant.imgIconheart, 'text': 'Reacted messages', 'trailing': '142'},
+      {
+        'icon': ImageConstant.imgIconheart,
+        'text': 'Reacted messages',
+        'trailing': '142'
+      },
       {'icon': ImageConstant.imgIconsearch, 'text': 'Search', 'trailing': ''}
     ];
     return ListView.separated(
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
       itemCount: items.length,
       itemBuilder: (context, index) {
         return ActionItem(items[index]);
       },
       separatorBuilder: (context, index) {
-        return Gap(2);
+        return const Gap(2);
       },
     );
   }
 }
-
 
 class ActionItem extends StatelessWidget {
   final dynamic item;
@@ -75,7 +78,7 @@ class ActionItem extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Container(
+                  SizedBox(
                     height: getSize(
                       22,
                     ),
@@ -135,7 +138,7 @@ class ActionItem extends StatelessWidget {
                         4,
                       ),
                     ),
-                    child: Container(
+                    child: SizedBox(
                       height: getSize(
                         22,
                       ),

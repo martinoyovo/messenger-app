@@ -45,20 +45,16 @@ class AudioFrame extends StatelessWidget {
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment:
-          CrossAxisAlignment.center,
-          mainAxisAlignment:
-          MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: ColorConstant
-                      .deepPurpleA200,
-                  borderRadius:
-                  BorderRadius.only(
+                  color: ColorConstant.deepPurpleA200,
+                  borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(
                       getHorizontalSize(
                         12,
@@ -74,8 +70,7 @@ class AudioFrame extends StatelessWidget {
                         12,
                       ),
                     ),
-                    bottomRight:
-                    Radius.circular(
+                    bottomRight: Radius.circular(
                       getHorizontalSize(
                         3,
                       ),
@@ -83,12 +78,9 @@ class AudioFrame extends StatelessWidget {
                   ),
                 ),
                 child: Column(
-                  mainAxisSize:
-                  MainAxisSize.min,
-                  crossAxisAlignment:
-                  CrossAxisAlignment.center,
-                  mainAxisAlignment:
-                  MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(
                       padding: EdgeInsets.only(
@@ -98,22 +90,19 @@ class AudioFrame extends StatelessWidget {
                         top: getVerticalSize(
                           12,
                         ),
-                        right:
-                        getHorizontalSize(
+                        right: getHorizontalSize(
                           12,
                         ),
                       ),
-                      child: Container(
+                      child: SizedBox(
                         height: getVerticalSize(
                           40,
                         ),
-                        width:
-                        getHorizontalSize(
+                        width: getHorizontalSize(
                           271,
                         ),
                         child: SvgPicture.asset(
-                          ImageConstant
-                              .imgFrame240,
+                          ImageConstant.imgFrame240,
                           fit: BoxFit.fill,
                         ),
                       ),
@@ -126,8 +115,7 @@ class AudioFrame extends StatelessWidget {
                         top: getVerticalSize(
                           4,
                         ),
-                        right:
-                        getHorizontalSize(
+                        right: getHorizontalSize(
                           12,
                         ),
                         bottom: getVerticalSize(
@@ -135,123 +123,79 @@ class AudioFrame extends StatelessWidget {
                         ),
                       ),
                       child: Row(
-                        mainAxisAlignment:
-                        MainAxisAlignment
-                            .spaceBetween,
-                        crossAxisAlignment:
-                        CrossAxisAlignment
-                            .center,
-                        mainAxisSize:
-                        MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.max,
                         children: [
                           Container(
-                            width:
-                            getHorizontalSize(
+                            width: getHorizontalSize(
                               69,
                             ),
-                            margin:
-                            EdgeInsets.only(
-                              left:
-                              getHorizontalSize(
+                            margin: EdgeInsets.only(
+                              left: getHorizontalSize(
                                 8,
                               ),
                             ),
                             child: Row(
-                              crossAxisAlignment:
-                              CrossAxisAlignment
-                                  .center,
-                              mainAxisSize:
-                              MainAxisSize
-                                  .min,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisSize: MainAxisSize.min,
                               children: [
                                 Text(
                                   "0:51",
-                                  overflow:
-                                  TextOverflow
-                                      .ellipsis,
-                                  textAlign:
-                                  TextAlign
-                                      .center,
-                                  style:
-                                  TextStyle(
-                                    color: ColorConstant
-                                        .whiteA700,
-                                    fontSize:
-                                    getFontSize(
+                                  overflow: TextOverflow.ellipsis,
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: ColorConstant.whiteA700,
+                                    fontSize: getFontSize(
                                       12,
                                     ),
-                                    fontFamily:
-                                    'General Sans',
-                                    fontWeight:
-                                    FontWeight
-                                        .w400,
+                                    fontFamily: 'General Sans',
+                                    fontWeight: FontWeight.w400,
                                   ),
                                 ),
                                 Container(
-                                  width:
-                                  getHorizontalSize(
+                                  width: getHorizontalSize(
                                     32,
                                   ),
-                                  margin:
-                                  EdgeInsets
-                                      .only(
-                                    left:
-                                    getHorizontalSize(
+                                  margin: EdgeInsets.only(
+                                    left: getHorizontalSize(
                                       16,
                                     ),
                                   ),
                                   child: Row(
                                     crossAxisAlignment:
-                                    CrossAxisAlignment
-                                        .center,
-                                    mainAxisSize:
-                                    MainAxisSize
-                                        .min,
+                                        CrossAxisAlignment.center,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      Container(
-                                        height:
-                                        getSize(
+                                      SizedBox(
+                                        height: getSize(
                                           14,
                                         ),
-                                        width:
-                                        getSize(
+                                        width: getSize(
                                           14,
                                         ),
-                                        child: SvgPicture
-                                            .asset(
-                                          ImageConstant
-                                              .imgGroup2422,
-                                          fit: BoxFit
-                                              .fill,
+                                        child: SvgPicture.asset(
+                                          ImageConstant.imgGroup2422,
+                                          fit: BoxFit.fill,
                                         ),
                                       ),
                                       Padding(
-                                        padding:
-                                        EdgeInsets.only(
-                                          left:
-                                          getHorizontalSize(
+                                        padding: EdgeInsets.only(
+                                          left: getHorizontalSize(
                                             4,
                                           ),
                                         ),
-                                        child:
-                                        Text(
+                                        child: Text(
                                           "28",
-                                          overflow:
-                                          TextOverflow.ellipsis,
-                                          textAlign:
-                                          TextAlign.center,
-                                          style:
-                                          TextStyle(
-                                            color:
-                                            ColorConstant.whiteA700,
-                                            fontSize:
-                                            getFontSize(
+                                          overflow: TextOverflow.ellipsis,
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            color: ColorConstant.whiteA700,
+                                            fontSize: getFontSize(
                                               12,
                                             ),
-                                            fontFamily:
-                                            'General Sans',
-                                            fontWeight:
-                                            FontWeight.w400,
+                                            fontFamily: 'General Sans',
+                                            fontWeight: FontWeight.w400,
                                           ),
                                         ),
                                       ),
@@ -261,89 +205,62 @@ class AudioFrame extends StatelessWidget {
                               ],
                             ),
                           ),
-                          Container(
-                            width:
-                            getHorizontalSize(
+                          SizedBox(
+                            width: getHorizontalSize(
                               68,
                             ),
                             child: Row(
-                              crossAxisAlignment:
-                              CrossAxisAlignment
-                                  .center,
-                              mainAxisSize:
-                              MainAxisSize
-                                  .min,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisSize: MainAxisSize.min,
                               children: [
-                                Container(
-                                  width:
-                                  getHorizontalSize(
+                                SizedBox(
+                                  width: getHorizontalSize(
                                     36,
                                   ),
                                   child: Row(
                                     crossAxisAlignment:
-                                    CrossAxisAlignment
-                                        .center,
-                                    mainAxisSize:
-                                    MainAxisSize
-                                        .max,
+                                        CrossAxisAlignment.center,
+                                    mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding:
-                                        EdgeInsets.only(
-                                          top:
-                                          getVerticalSize(
+                                        padding: EdgeInsets.only(
+                                          top: getVerticalSize(
                                             1.5,
                                           ),
-                                          bottom:
-                                          getVerticalSize(
+                                          bottom: getVerticalSize(
                                             1.5,
                                           ),
                                         ),
-                                        child:
-                                        Container(
-                                          height:
-                                          getSize(
+                                        child: SizedBox(
+                                          height: getSize(
                                             14,
                                           ),
-                                          width:
-                                          getSize(
+                                          width: getSize(
                                             14,
                                           ),
-                                          child:
-                                          SvgPicture.asset(
+                                          child: SvgPicture.asset(
                                             ImageConstant.imgIconeye3,
-                                            fit:
-                                            BoxFit.fill,
+                                            fit: BoxFit.fill,
                                           ),
                                         ),
                                       ),
                                       Padding(
-                                        padding:
-                                        EdgeInsets.only(
-                                          left:
-                                          getHorizontalSize(
+                                        padding: EdgeInsets.only(
+                                          left: getHorizontalSize(
                                             2,
                                           ),
                                         ),
-                                        child:
-                                        Text(
+                                        child: Text(
                                           "532",
-                                          overflow:
-                                          TextOverflow.ellipsis,
-                                          textAlign:
-                                          TextAlign.center,
-                                          style:
-                                          TextStyle(
-                                            color:
-                                            ColorConstant.whiteA700,
-                                            fontSize:
-                                            getFontSize(
+                                          overflow: TextOverflow.ellipsis,
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            color: ColorConstant.whiteA700,
+                                            fontSize: getFontSize(
                                               12,
                                             ),
-                                            fontFamily:
-                                            'General Sans',
-                                            fontWeight:
-                                            FontWeight.w400,
+                                            fontFamily: 'General Sans',
+                                            fontWeight: FontWeight.w400,
                                           ),
                                         ),
                                       ),
@@ -351,35 +268,22 @@ class AudioFrame extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding:
-                                  EdgeInsets
-                                      .only(
-                                    left:
-                                    getHorizontalSize(
+                                  padding: EdgeInsets.only(
+                                    left: getHorizontalSize(
                                       8,
                                     ),
                                   ),
                                   child: Text(
                                     "13:12",
-                                    overflow:
-                                    TextOverflow
-                                        .ellipsis,
-                                    textAlign:
-                                    TextAlign
-                                        .center,
-                                    style:
-                                    TextStyle(
-                                      color: ColorConstant
-                                          .whiteA700,
-                                      fontSize:
-                                      getFontSize(
+                                    overflow: TextOverflow.ellipsis,
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      color: ColorConstant.whiteA700,
+                                      fontSize: getFontSize(
                                         12,
                                       ),
-                                      fontFamily:
-                                      'General Sans',
-                                      fontWeight:
-                                      FontWeight
-                                          .w400,
+                                      fontFamily: 'General Sans',
+                                      fontWeight: FontWeight.w400,
                                     ),
                                   ),
                                 ),

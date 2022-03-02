@@ -17,20 +17,22 @@ class StackedWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final allItems = items!.map((urlImage) => buildImage(urlImage)).toList()
+    final allItems = items!
+        .map((urlImage) => buildImage(urlImage))
+        .toList()
         .asMap()
         .map((index, item) {
-      final left = size - xShift;
+          final left = size - xShift;
 
-      final value = Container(
-        width: getSize(size),
-        height: getSize(size),
-        child: item,
-        margin: EdgeInsets.only(left: left * index),
-      );
+          final value = Container(
+            width: getSize(size),
+            height: getSize(size),
+            child: item,
+            margin: EdgeInsets.only(left: left * index),
+          );
 
-      return MapEntry(index, value);
-    })
+          return MapEntry(index, value);
+        })
         .values
         .toList();
 
@@ -42,11 +44,11 @@ class StackedWidgets extends StatelessWidget {
   }
 
   Widget buildImage(String urlImage) {
-    final double borderSize = 1.5;
+    const double borderSize = 1.5;
 
     return ClipOval(
       child: Container(
-        padding: EdgeInsets.all(borderSize),
+        padding: const EdgeInsets.all(borderSize),
         color: Colors.white,
         child: ClipOval(
           child: Image.asset(

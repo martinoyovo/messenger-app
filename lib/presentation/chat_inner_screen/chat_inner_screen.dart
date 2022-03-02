@@ -8,6 +8,8 @@ import 'package:messenger_app/core/app_export.dart';
 import 'widgets/chat_inner_item_widget.dart';
 
 class ChatInnerScreen extends StatelessWidget {
+  const ChatInnerScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,11 +19,9 @@ class ChatInnerScreen extends StatelessWidget {
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
                 colors: [
-                  ColorConstant.fromHex('#EDE7FF'),
-                  ColorConstant.fromHex('#E5EBFF'),
-                ]
-            )
-        ),
+              ColorConstant.fromHex('#EDE7FF'),
+              ColorConstant.fromHex('#E5EBFF'),
+            ])),
         child: Stack(
           children: [
             ListView(
@@ -32,8 +32,7 @@ class ChatInnerScreen extends StatelessWidget {
               ),
               children: [
                 Row(
-                  crossAxisAlignment:
-                  CrossAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Image.asset(
@@ -48,42 +47,41 @@ class ChatInnerScreen extends StatelessWidget {
                     ),
                     Expanded(
                       child: Padding(
-                        padding: EdgeInsets.only(
-                          left: getHorizontalSize(
-                            8,
+                          padding: EdgeInsets.only(
+                            left: getHorizontalSize(
+                              8,
+                            ),
                           ),
-                        ),
-                        child: Column(
-                          children: [
-                            ChatInnerItemWidget.name(
-                              sender: 'Jenny Wilson',
-                              image: ImageConstant.imgUnsplashauvrwz,
-                              interestAsset: ImageConstant.imgGroup242,
-                              likedCount: '146',
-                              readCount: '1.8K',
-                              date: '12:35',
-                            ),
-                            const Gap(6),
-                            ChatInnerItemWidget.name(
-                              text: 'I want to share with you a photo of my plant that I took today. I hope you will like it😅🌸.',
-                              interestAsset: ImageConstant.imgGroup242,
-                              likedCount: '110',
-                              highlight: true,
-                              readCount: '1.6K',
-                              date: '12:50',
-                            ),
-                          ],
-                        )
-                      ),
+                          child: Column(
+                            children: [
+                              ChatInnerItemWidget.name(
+                                sender: 'Jenny Wilson',
+                                image: ImageConstant.imgUnsplashauvrwz,
+                                interestAsset: ImageConstant.imgGroup242,
+                                likedCount: '146',
+                                readCount: '1.8K',
+                                date: '12:35',
+                              ),
+                              const Gap(6),
+                              ChatInnerItemWidget.name(
+                                text:
+                                    'I want to share with you a photo of my plant that I took today. I hope you will like it😅🌸.',
+                                interestAsset: ImageConstant.imgGroup242,
+                                likedCount: '110',
+                                highlight: true,
+                                readCount: '1.6K',
+                                date: '12:50',
+                              ),
+                            ],
+                          )),
                     ),
                   ],
                 ),
                 const Gap(10),
-                AudioFrame(),
+                const AudioFrame(),
                 const Gap(10),
                 Row(
-                  crossAxisAlignment:
-                  CrossAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Image.asset(
@@ -110,8 +108,7 @@ class ChatInnerScreen extends StatelessWidget {
                             likedCount: '4',
                             readCount: '21',
                             date: '13:46',
-                          )
-                      ),
+                          )),
                     ),
                   ],
                 ),
@@ -151,11 +148,8 @@ class ChatInnerScreen extends StatelessWidget {
                         ),
                       ),
                       Row(
-                        crossAxisAlignment:
-                        CrossAxisAlignment
-                            .center,
-                        mainAxisSize:
-                        MainAxisSize.max,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.max,
                         children: [
                           Column(
                             mainAxisSize: MainAxisSize.min,
@@ -170,38 +164,60 @@ class ChatInnerScreen extends StatelessWidget {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     color: ColorConstant.gray900,
-                                    fontSize: getFontSize(16,),
-                                    fontFamily:
-                                    'SF Pro Text',
+                                    fontSize: getFontSize(
+                                      16,
+                                    ),
+                                    fontFamily: 'SF Pro Text',
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
                               Container(
-                                width: getHorizontalSize(76,),
-                                margin: EdgeInsets.only(left: getHorizontalSize(8.5,),
-                                  top: getVerticalSize(3,),
-                                  right: getHorizontalSize(8.5,),
+                                width: getHorizontalSize(
+                                  76,
+                                ),
+                                margin: EdgeInsets.only(
+                                  left: getHorizontalSize(
+                                    8.5,
+                                  ),
+                                  top: getVerticalSize(
+                                    3,
+                                  ),
+                                  right: getHorizontalSize(
+                                    8.5,
+                                  ),
                                 ),
                                 child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    Container(
-                                      width: getHorizontalSize(25,),
+                                    SizedBox(
+                                      width: getHorizontalSize(
+                                        25,
+                                      ),
                                       child: Row(
-                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
                                         mainAxisSize: MainAxisSize.min,
                                         children: [
                                           Padding(
                                             padding: EdgeInsets.only(
-                                              top: getVerticalSize(2.5,),
-                                              bottom: getVerticalSize(2.5,),
+                                              top: getVerticalSize(
+                                                2.5,
+                                              ),
+                                              bottom: getVerticalSize(
+                                                2.5,
+                                              ),
                                             ),
-                                            child: Container(
-                                              height: getSize(12,),
-                                              width: getSize(12,),
+                                            child: SizedBox(
+                                              height: getSize(
+                                                12,
+                                              ),
+                                              width: getSize(
+                                                12,
+                                              ),
                                               child: SvgPicture.asset(
                                                 ImageConstant.imgIconuser1,
                                                 fit: BoxFit.fill,
@@ -210,14 +226,17 @@ class ChatInnerScreen extends StatelessWidget {
                                           ),
                                           Padding(
                                             padding: EdgeInsets.only(
-                                              left: getHorizontalSize(2,),
+                                              left: getHorizontalSize(
+                                                2,
+                                              ),
                                             ),
                                             child: Text(
                                               "12",
                                               overflow: TextOverflow.ellipsis,
                                               textAlign: TextAlign.center,
                                               style: TextStyle(
-                                                color: ColorConstant.bluegray400,
+                                                color:
+                                                    ColorConstant.bluegray400,
                                                 fontSize: getFontSize(
                                                   12,
                                                 ),
@@ -229,17 +248,14 @@ class ChatInnerScreen extends StatelessWidget {
                                         ],
                                       ),
                                     ),
-                                    Container(
-                                      width:
-                                      getHorizontalSize(
+                                    SizedBox(
+                                      width: getHorizontalSize(
                                         43,
                                       ),
-                                      child:
-                                      Row(
+                                      child: Row(
                                         crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                        mainAxisSize:
-                                        MainAxisSize.max,
+                                            CrossAxisAlignment.center,
+                                        mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Padding(
                                             padding: EdgeInsets.only(
@@ -250,7 +266,7 @@ class ChatInnerScreen extends StatelessWidget {
                                                 2.5,
                                               ),
                                             ),
-                                            child: Container(
+                                            child: SizedBox(
                                               height: getSize(
                                                 12,
                                               ),
@@ -274,7 +290,8 @@ class ChatInnerScreen extends StatelessWidget {
                                               overflow: TextOverflow.ellipsis,
                                               textAlign: TextAlign.center,
                                               style: TextStyle(
-                                                color: ColorConstant.bluegray400,
+                                                color:
+                                                    ColorConstant.bluegray400,
                                                 fontSize: getFontSize(
                                                   12,
                                                 ),
@@ -292,16 +309,13 @@ class ChatInnerScreen extends StatelessWidget {
                             ],
                           ),
                           Padding(
-                            padding:
-                            EdgeInsets.only(
-                              left:
-                              getHorizontalSize(
+                            padding: EdgeInsets.only(
+                              left: getHorizontalSize(
                                 85.5,
                               ),
                             ),
                             child: Image.asset(
-                              ImageConstant
-                                  .imgRectangle1621,
+                              ImageConstant.imgRectangle1621,
                               height: getSize(
                                 40,
                               ),
@@ -339,7 +353,7 @@ class ChatInnerScreen extends StatelessWidget {
                           8,
                         ),
                       ),
-                      child: Container(
+                      child: SizedBox(
                         height: getSize(
                           24,
                         ),
@@ -411,7 +425,7 @@ class ChatInnerScreen extends StatelessWidget {
                           8,
                         ),
                       ),
-                      child: Container(
+                      child: SizedBox(
                         height: getSize(
                           24,
                         ),

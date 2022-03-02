@@ -28,34 +28,33 @@ class ChatModel {
   final List<String> groupMembers;
 
   factory ChatModel.fromJson(Map<String, dynamic> json) => ChatModel(
-    image: json["image"],
-    title: json["title"],
-    pinned: json["pinned"],
-    muted: json["muted"],
-    archived: json["archived"],
-    name: json["name"],
-    lastMessage: json["lastMessage"],
-    date: json["date"],
-    unread: json["messagesCount"],
-    membersCount: json["membersCount"],
-    groupMembers: List<String>.from(json["groupMembers"].map((x) => x)),
-  );
+        image: json["image"],
+        title: json["title"],
+        pinned: json["pinned"],
+        muted: json["muted"],
+        archived: json["archived"],
+        name: json["name"],
+        lastMessage: json["lastMessage"],
+        date: json["date"],
+        unread: json["messagesCount"],
+        membersCount: json["membersCount"],
+        groupMembers: List<String>.from(json["groupMembers"].map((x) => x)),
+      );
 
   Map<String, dynamic> toJson() => {
-    "image": image,
-    "title": title,
-    "pinned": pinned,
-    "muted": muted,
-    "archived": archived,
-    "name": name,
-    "lastMessage": lastMessage,
-    "date": date,
-    "messagesCount": unread,
-    "membersCount": membersCount,
-    "groupMembers": List<dynamic>.from(groupMembers.map((x) => x)),
-  };
+        "image": image,
+        "title": title,
+        "pinned": pinned,
+        "muted": muted,
+        "archived": archived,
+        "name": name,
+        "lastMessage": lastMessage,
+        "date": date,
+        "messagesCount": unread,
+        "membersCount": membersCount,
+        "groupMembers": List<dynamic>.from(groupMembers.map((x) => x)),
+      };
 }
-
 
 List<Map<String, dynamic>> itemsList = [
   {

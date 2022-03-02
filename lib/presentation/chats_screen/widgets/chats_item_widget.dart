@@ -13,13 +13,14 @@ class ChatsItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => DetailsPage())),
+      onTap: () => Navigator.push(
+          context, MaterialPageRoute(builder: (_) => const DetailsPage())),
       child: Container(
         margin: EdgeInsets.only(
           top: getVerticalSize(6.0),
           bottom: getVerticalSize(6.0),
         ),
-        padding: EdgeInsets.all(15),
+        padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           color: ColorConstant.whiteA700,
           borderRadius: BorderRadius.circular(
@@ -75,17 +76,21 @@ class ChatsItemWidget extends StatelessWidget {
                               4,
                             ),
                           ),
-                          child: Container(
+                          child: SizedBox(
                             height: getSize(
                               16,
                             ),
                             width: getSize(
                               16,
                             ),
-                            child: item.pinned == false && item.muted == false ? const SizedBox() : SvgPicture.asset(
-                              item.pinned == true ? ImageConstant.imgIconpin : ImageConstant.imgIconsoundoff1,
-                              fit: BoxFit.fill,
-                            ),
+                            child: item.pinned == false && item.muted == false
+                                ? const SizedBox()
+                                : SvgPicture.asset(
+                                    item.pinned == true
+                                        ? ImageConstant.imgIconpin
+                                        : ImageConstant.imgIconsoundoff1,
+                                    fit: BoxFit.fill,
+                                  ),
                           ),
                         ),
                       ],
@@ -146,7 +151,7 @@ class ChatsItemWidget extends StatelessWidget {
                     ),
                   ],
                 ),
-                Spacer(),
+                const Spacer(),
                 Column(
                   children: [
                     Text(
@@ -180,7 +185,9 @@ class ChatsItemWidget extends StatelessWidget {
                           20,
                         ),
                         decoration: BoxDecoration(
-                          color:  item.archived == false ? ColorConstant.deepPurpleA200 : ColorConstant.bluegray100,
+                          color: item.archived == false
+                              ? ColorConstant.deepPurpleA200
+                              : ColorConstant.bluegray100,
                           borderRadius: BorderRadius.circular(
                             getHorizontalSize(
                               20,
@@ -209,7 +216,10 @@ class ChatsItemWidget extends StatelessWidget {
             Row(
               mainAxisSize: MainAxisSize.max,
               children: [
-                StackedWidgets(direction: TextDirection.rtl, items: item.groupMembers,),
+                StackedWidgets(
+                  direction: TextDirection.rtl,
+                  items: item.groupMembers,
+                ),
                 const Gap(8),
                 Text(
                   "+ ${item.membersCount}",
@@ -226,7 +236,10 @@ class ChatsItemWidget extends StatelessWidget {
                 ),
                 const Spacer(),
                 InkWell(
-                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => ChatInnerScreen())),
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (_) => const ChatInnerScreen())),
                   child: Container(
                     alignment: Alignment.center,
                     padding: EdgeInsets.only(

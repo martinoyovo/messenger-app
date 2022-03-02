@@ -7,6 +7,8 @@ import 'models/chat_model.dart';
 import 'widgets/chats_item_widget.dart';
 
 class ChatsScreen extends StatelessWidget {
+  const ChatsScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,11 +18,9 @@ class ChatsScreen extends StatelessWidget {
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
                 colors: [
-                  ColorConstant.fromHex('#EDE7FF'),
-                  ColorConstant.fromHex('#E5EBFF'),
-                ]
-            )
-        ),
+              ColorConstant.fromHex('#EDE7FF'),
+              ColorConstant.fromHex('#E5EBFF'),
+            ])),
         child: ListView(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           children: [
@@ -55,7 +55,7 @@ class ChatsScreen extends StatelessWidget {
               ),
             ),
             const Gap(12),
-            Container(
+            SizedBox(
               height: getVerticalSize(
                 40,
               ),
@@ -85,7 +85,7 @@ class ChatsScreen extends StatelessWidget {
                         10,
                       ),
                     ),
-                    child: Container(
+                    child: SizedBox(
                       height: getSize(
                         20,
                       ),
@@ -133,9 +133,7 @@ class ChatsScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
                 color: ColorConstant.deepPurpleA200,
-                borderRadius: BorderRadius.circular(
-                  getHorizontalSize(12)
-                ),
+                borderRadius: BorderRadius.circular(getHorizontalSize(12)),
                 boxShadow: [
                   BoxShadow(
                     color: ColorConstant.deepPurpleA20066,
@@ -145,7 +143,7 @@ class ChatsScreen extends StatelessWidget {
                     blurRadius: getHorizontalSize(
                       1,
                     ),
-                    offset: Offset(
+                    offset: const Offset(
                       0,
                       1,
                     ),
@@ -164,10 +162,8 @@ class ChatsScreen extends StatelessWidget {
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment:
-                      CrossAxisAlignment.start,
-                      mainAxisAlignment:
-                      MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Padding(
                           padding: EdgeInsets.only(
@@ -239,8 +235,7 @@ class ChatsScreen extends StatelessWidget {
                             ),
                             decoration: BoxDecoration(
                               color: ColorConstant.whiteA700,
-                              borderRadius:
-                              BorderRadius.circular(
+                              borderRadius: BorderRadius.circular(
                                 getHorizontalSize(
                                   50,
                                 ),
@@ -250,8 +245,7 @@ class ChatsScreen extends StatelessWidget {
                               'Try now',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: ColorConstant
-                                    .deepPurpleA200,
+                                color: ColorConstant.deepPurpleA200,
                                 fontSize: getFontSize(
                                   14,
                                 ),
@@ -276,29 +270,23 @@ class ChatsScreen extends StatelessWidget {
                           TextSpan(
                             text: '75',
                             style: TextStyle(
-                              color: ColorConstant
-                                  .whiteA700,
+                              color: ColorConstant.whiteA700,
                               fontSize: getFontSize(
                                 20,
                               ),
-                              fontFamily:
-                              'General Sans',
-                              fontWeight:
-                              FontWeight.w600,
+                              fontFamily: 'General Sans',
+                              fontWeight: FontWeight.w600,
                             ),
                           ),
                           TextSpan(
                             text: '%',
                             style: TextStyle(
-                              color: ColorConstant
-                                  .whiteA700,
+                              color: ColorConstant.whiteA700,
                               fontSize: getFontSize(
                                 15,
                               ),
-                              fontFamily:
-                              'General Sans',
-                              fontWeight:
-                              FontWeight.w600,
+                              fontFamily: 'General Sans',
+                              fontWeight: FontWeight.w600,
                             ),
                           )
                         ],
@@ -313,7 +301,7 @@ class ChatsScreen extends StatelessWidget {
             ),
             ListView.builder(
               padding: const EdgeInsets.only(top: 10, bottom: 10),
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               itemCount: itemsList.length,
               itemBuilder: (context, index) {
@@ -344,27 +332,28 @@ class ChatsScreen extends StatelessWidget {
                 ),
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisSize: MainAxisSize.max,
-                children: [
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
                     ImageConstant.imgIcon,
                     ImageConstant.imgIcon1,
                     ImageConstant.imgIcon2,
                     ImageConstant.imgIcon3,
-                  ].map<Widget>((icon) => Container(
-                  height: getSize(
-                    24,
-                  ),
-                  width: getSize(
-                    24,
-                  ),
-                  child: SvgPicture.asset(
-                    icon,
-                    fit: BoxFit.fill,
-                  ),
-                )).toList()
-              ),
+                  ]
+                      .map<Widget>((icon) => SizedBox(
+                            height: getSize(
+                              24,
+                            ),
+                            width: getSize(
+                              24,
+                            ),
+                            child: SvgPicture.asset(
+                              icon,
+                              fit: BoxFit.fill,
+                            ),
+                          ))
+                      .toList()),
             ),
           ),
         ),

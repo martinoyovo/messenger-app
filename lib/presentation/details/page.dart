@@ -7,6 +7,8 @@ import 'package:messenger_app/presentation/details/widgets/action.dart';
 import 'package:messenger_app/presentation/details/widgets/category.dart';
 
 class DetailsPage extends StatelessWidget {
+  const DetailsPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,7 +52,7 @@ class DetailsPage extends StatelessWidget {
                         size: 20,
                       ),
                     ),
-                    Container(
+                    SizedBox(
                       height: getSize(22),
                       width: getSize(22),
                       child: SvgPicture.asset(
@@ -73,14 +75,17 @@ class DetailsPage extends StatelessWidget {
               child: Card(
                 clipBehavior: Clip.antiAlias,
                 elevation: 0,
-                margin: EdgeInsets.symmetric(),
+                margin: const EdgeInsets.symmetric(),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.vertical(top: Radius.circular(getHorizontalSize(16),))
-                ),
+                    borderRadius: BorderRadius.vertical(
+                        top: Radius.circular(
+                  getHorizontalSize(16),
+                ))),
                 child: Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 15, vertical: 15),
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -101,18 +106,15 @@ class DetailsPage extends StatelessWidget {
                           ),
                           const Gap(8),
                           Row(
-                            mainAxisAlignment:
-                                MainAxisAlignment.start,
-                            crossAxisAlignment:
-                                CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Row(
-                                crossAxisAlignment:
-                                    CrossAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
-                                  Container(
+                                  SizedBox(
                                     height: getSize(
                                       14,
                                     ),
@@ -120,8 +122,7 @@ class DetailsPage extends StatelessWidget {
                                       14,
                                     ),
                                     child: SvgPicture.asset(
-                                      ImageConstant
-                                          .imgIconuser,
+                                      ImageConstant.imgIconuser,
                                       fit: BoxFit.fill,
                                     ),
                                   ),
@@ -133,20 +134,15 @@ class DetailsPage extends StatelessWidget {
                                     ),
                                     child: Text(
                                       "4",
-                                      overflow:
-                                          TextOverflow.ellipsis,
-                                      textAlign:
-                                          TextAlign.center,
+                                      overflow: TextOverflow.ellipsis,
+                                      textAlign: TextAlign.center,
                                       style: TextStyle(
-                                        color: ColorConstant
-                                            .bluegray400,
+                                        color: ColorConstant.bluegray400,
                                         fontSize: getFontSize(
                                           14,
                                         ),
-                                        fontFamily:
-                                            'General Sans',
-                                        fontWeight:
-                                            FontWeight.w500,
+                                        fontFamily: 'General Sans',
+                                        fontWeight: FontWeight.w500,
                                       ),
                                     ),
                                   ),
@@ -154,11 +150,10 @@ class DetailsPage extends StatelessWidget {
                               ),
                               const Gap(10),
                               Row(
-                                crossAxisAlignment:
-                                    CrossAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Container(
+                                  SizedBox(
                                     height: getSize(
                                       14,
                                     ),
@@ -166,8 +161,7 @@ class DetailsPage extends StatelessWidget {
                                       14,
                                     ),
                                     child: SvgPicture.asset(
-                                      ImageConstant
-                                          .imgIconeye,
+                                      ImageConstant.imgIconeye,
                                       fit: BoxFit.fill,
                                     ),
                                   ),
@@ -179,20 +173,15 @@ class DetailsPage extends StatelessWidget {
                                     ),
                                     child: Text(
                                       "2 482",
-                                      overflow:
-                                          TextOverflow.ellipsis,
-                                      textAlign:
-                                          TextAlign.center,
+                                      overflow: TextOverflow.ellipsis,
+                                      textAlign: TextAlign.center,
                                       style: TextStyle(
-                                        color: ColorConstant
-                                            .bluegray400,
+                                        color: ColorConstant.bluegray400,
                                         fontSize: getFontSize(
                                           14,
                                         ),
-                                        fontFamily:
-                                            'General Sans',
-                                        fontWeight:
-                                            FontWeight.w500,
+                                        fontFamily: 'General Sans',
+                                        fontWeight: FontWeight.w500,
                                       ),
                                     ),
                                   ),
@@ -222,26 +211,23 @@ class DetailsPage extends StatelessWidget {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                           children: [
-                            {'animal': '🐈', 'text': 'Animals'},
-                            {'animal': '🌿', 'text': 'Nature'},
-                            {'animal': '👾', 'text': 'Entertainment'}
-                          ].map<Widget>((e) => Category(e)).toList()
-                      ),
+                        {'animal': '🐈', 'text': 'Animals'},
+                        {'animal': '🌿', 'text': 'Nature'},
+                        {'animal': '👾', 'text': 'Entertainment'}
+                      ].map<Widget>((e) => Category(e)).toList()),
                     ),
                     const Gap(15),
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            begin: Alignment.centerLeft,
-                            end: Alignment.centerRight,
-                            colors: [
+                            gradient: LinearGradient(
+                                begin: Alignment.centerLeft,
+                                end: Alignment.centerRight,
+                                colors: [
                               ColorConstant.fromHex('#ECE9FF'),
                               Colors.grey.shade100
-                            ]
-                          )
-                        ),
-                        child: ActionList(),
+                            ])),
+                        child: const ActionList(),
                       ),
                     ),
                   ],

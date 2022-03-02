@@ -3,7 +3,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 import 'package:messenger_app/core/app_export.dart';
 
-
 class ChatInnerItemWidget extends StatelessWidget {
   final bool isRight;
   final String? image;
@@ -15,7 +14,7 @@ class ChatInnerItemWidget extends StatelessWidget {
   final String likedCount;
   final bool? highlight;
 
-  ChatInnerItemWidget.name({
+  const ChatInnerItemWidget.name({
     this.isRight = false,
     this.highlight,
     this.image,
@@ -30,9 +29,7 @@ class ChatInnerItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(
-          right: 45
-      ),
+      margin: const EdgeInsets.only(right: 45),
       decoration: BoxDecoration(
         color: ColorConstant.whiteA700,
         borderRadius: BorderRadius.only(
@@ -73,7 +70,8 @@ class ChatInnerItemWidget extends StatelessWidget {
             alignment: Alignment.centerLeft,
             child: Container(
               width: double.infinity,
-              padding: EdgeInsets.fromLTRB(getSize(12), getSize(12), getSize(16), getSize(12)),
+              padding: EdgeInsets.fromLTRB(
+                  getSize(12), getSize(12), getSize(16), getSize(12)),
               decoration: BoxDecoration(
                 color: ColorConstant.whiteA700,
                 borderRadius: BorderRadius.only(
@@ -104,60 +102,67 @@ class ChatInnerItemWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  sender == null ? SizedBox() : Padding(
-                    padding: EdgeInsets.only(
-                      left: getVerticalSize(4),
-                    ),
-                    child: Text(
-                      sender!,
-                      overflow: TextOverflow.ellipsis,
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        color: ColorConstant.deepPurpleA200,
-                        fontSize: getFontSize(
-                          14,
+                  sender == null
+                      ? const SizedBox()
+                      : Padding(
+                          padding: EdgeInsets.only(
+                            left: getVerticalSize(4),
+                          ),
+                          child: Text(
+                            sender!,
+                            overflow: TextOverflow.ellipsis,
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                              color: ColorConstant.deepPurpleA200,
+                              fontSize: getFontSize(
+                                14,
+                              ),
+                              fontFamily: 'SF Pro Text',
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
                         ),
-                        fontFamily: 'SF Pro Text',
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
-                  image == null ? SizedBox() : Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(
-                          top: getVerticalSize(4),
-                          left: getVerticalSize(4),
+                  image == null
+                      ? const SizedBox()
+                      : Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: getVerticalSize(4),
+                                left: getVerticalSize(4),
+                              ),
+                              child: Image.asset(
+                                image!,
+                                height: getVerticalSize(152),
+                                width: double.infinity,
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                            const Gap(5),
+                          ],
                         ),
-                        child: Image.asset(
-                          image!,
-                          height: getVerticalSize(152),
-                          width: double.infinity,
-                          fit: BoxFit.fill,
+                  text == null
+                      ? const SizedBox()
+                      : Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(
+                                left: getVerticalSize(4),
+                              ),
+                              child: Text(
+                                text!,
+                                style: const TextStyle(
+                                    letterSpacing: 0,
+                                    fontWeight: FontWeight.normal,
+                                    height: 1.5,
+                                    fontSize: 16),
+                              ),
+                            ),
+                            const Gap(5),
+                          ],
                         ),
-                      ),
-                      const Gap(5),
-                    ],
-                  ),
-                  text == null ? SizedBox() : Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(
-                          left: getVerticalSize(4),
-                        ),
-                        child: Text(text!,
-                          style: TextStyle(
-                            letterSpacing: 0,
-                            fontWeight: FontWeight.normal,
-                            height: 1.5,
-                            fontSize: 16
-                          ),),
-                      ),
-                      const Gap(5),
-                    ],
-                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -167,7 +172,7 @@ class ChatInnerItemWidget extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Container(
+                          SizedBox(
                             height: getVerticalSize(
                               12,
                             ),
@@ -180,7 +185,9 @@ class ChatInnerItemWidget extends StatelessWidget {
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.left,
                             style: TextStyle(
-                              color: (highlight == true) ? ColorConstant.fromHex('#FA6969') : ColorConstant.bluegray400,
+                              color: (highlight == true)
+                                  ? ColorConstant.fromHex('#FA6969')
+                                  : ColorConstant.bluegray400,
                               fontSize: getFontSize(
                                 12,
                               ),
@@ -195,8 +202,7 @@ class ChatInnerItemWidget extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Row(
-                            crossAxisAlignment:
-                                CrossAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               SvgPicture.asset(
