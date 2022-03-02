@@ -11,7 +11,7 @@ flutter run
 
 ### App Preview
 
-|              App Preview             |             Chat Details           |             Chat Screen           |
+|              Home             |             Chat Details           |             Chat Screen           |
 | :----------------------------------: | :----------------------------------: | :----------------------------------: |
 | <img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/1.png" width="350"> | <img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/3.png" width="350"> | <img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/2.png" width="350"> |
 
