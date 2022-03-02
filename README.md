@@ -1,5 +1,14 @@
 # 🙈🙈 UI Design of the next Messenger💬 App ✍️
 
+### Get Started
+
+```shell
+git clone https://github.com/martinoyovo/messenger-app.git
+flutter clean
+flutter packages get
+flutter run
+```
+
 ### App Preview
 
 |              App Preview             |             Chat Details           |             Chat Screen           |
@@ -9,15 +18,6 @@
 ### Design Template
 <a src="https://www.figma.com/community/file/1076531551797581534"><img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/Cover.png"
 alt="Space Berrry" width="60%" /></a>
-
-### Get Started
-
-```shell
-git clone https://github.com/martinoyovo/messenger-app.git
-flutter clean
-flutter packages get
-flutter run
-```
 
 ### ⚡️ My Social Medias
 
