@@ -1,7 +1,7 @@
 # 🙈🙈 This is the UI design of the next Messenger/Whatsapp💬✍️
 
 Inspired by [@spaceberrry](https://www.figma.com/community/file/1076531551797581534)
-<img src="https://raw.githubusercontent.com/martinoyovo/messenger-app/main/screenshots/1.png" width="70%" height="70%" />
+<img src="https://github.com/martinoyovo/messenger-app/blob/main/sreenshots/Cover.png" width="70%" height="70%" />
 
 ## Get Started
 Run:
