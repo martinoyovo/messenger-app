@@ -1,12 +1,17 @@
-# messenger_app
+# 🙈🙈 This is the UI design of the next Messenger/Whatsapp💬✍️
 
-A new Flutter project.
+Inspired by [@spaceberrry](https://www.figma.com/community/file/1076531551797581534)
+<img src="https://raw.githubusercontent.com/martinoyovo/messenger-app/main/screenshots/1.png" width="70%" height="70%" />
 
-## Getting Started
+## Get Started
+Run:
+```shell
+git clone https://github.com/martinoyovo/messenger-app.git
+flutter clean
+flutter packages get
+flutter run
+```
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
@@ -14,3 +19,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+[Follow me for more content @martinoyovo](https://twitter.com/martinoyovo)
