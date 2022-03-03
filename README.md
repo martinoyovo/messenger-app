@@ -1,4 +1,4 @@
-# 🙈🙈 UI Design of the next Messenger💬 App ✍️
+# UI Design of the next Messenger💬 App ✍️
 
 ### Get Started
 
