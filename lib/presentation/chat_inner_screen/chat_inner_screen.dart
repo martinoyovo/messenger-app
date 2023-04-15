@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
-import 'package:gap/gap.dart';
-import 'package:messenger_app/presentation/chat_inner_screen/widgets/audio_frame.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:gap/gap.dart';
 import 'package:messenger_app/core/app_export.dart';
+import 'package:messenger_app/presentation/chat_inner_screen/widgets/audio_frame.dart';
 
 import 'widgets/chat_inner_item_widget.dart';
 

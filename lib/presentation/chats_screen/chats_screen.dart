@@ -1,8 +1,9 @@
-import 'package:gap/gap.dart';
-import 'package:percent_indicator/percent_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:gap/gap.dart';
 import 'package:messenger_app/core/app_export.dart';
+import 'package:percent_indicator/percent_indicator.dart';
+
 import 'models/chat_model.dart';
 import 'widgets/chats_item_widget.dart';
 

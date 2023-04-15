@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:gap/gap.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:gap/gap.dart';
 import 'package:messenger_app/core/app_export.dart';
 import 'package:messenger_app/presentation/details/widgets/action.dart';
 import 'package:messenger_app/presentation/details/widgets/category.dart';
