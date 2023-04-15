@@ -114,8 +114,118 @@ class ChatInnerScreen extends StatelessWidget {
                 ),
               ],
             ),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: ColorConstant.whiteA700E5,
+                ),
+                padding: const EdgeInsets.only(bottom: 30),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(
+                        top: getVerticalSize(
+                          24,
+                        ),
+                        bottom: getVerticalSize(
+                          8,
+                        ),
+                      ),
+                      child: SizedBox(
+                        height: getSize(
+                          24,
+                        ),
+                        width: getSize(
+                          24,
+                        ),
+                        child: SvgPicture.asset(
+                          ImageConstant.imgIconplus,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(
+                        top: getVerticalSize(
+                          16,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: getVerticalSize(
+                          40,
+                        ),
+                        width: getHorizontalSize(
+                          263,
+                        ),
+                        padding: EdgeInsets.only(
+                          left: getHorizontalSize(
+                            30,
+                          ),
+                          top: getVerticalSize(
+                            10,
+                          ),
+                          right: getHorizontalSize(
+                            30,
+                          ),
+                          bottom: getVerticalSize(
+                            10,
+                          ),
+                        ),
+                        decoration: BoxDecoration(
+                          color: ColorConstant.bluegray50,
+                          borderRadius: BorderRadius.circular(
+                            getHorizontalSize(
+                              8,
+                            ),
+                          ),
+                        ),
+                        child: Text(
+                          'Type something...',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: ColorConstant.bluegray400,
+                            fontSize: getFontSize(
+                              14,
+                            ),
+                            fontFamily: 'General Sans',
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(
+                        top: getVerticalSize(
+                          24,
+                        ),
+                        bottom: getVerticalSize(
+                          8,
+                        ),
+                      ),
+                      child: SizedBox(
+                        height: getSize(
+                          24,
+                        ),
+                        width: getSize(
+                          24,
+                        ),
+                        child: SvgPicture.asset(
+                          ImageConstant.imgIconmicro,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
             Container(
-              height: 85,
+              height: 120,
               decoration: BoxDecoration(
                 color: ColorConstant.whiteA700E5,
               ),
@@ -329,116 +439,6 @@ class ChatInnerScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                ),
-              ),
-            ),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: ColorConstant.whiteA700E5,
-                ),
-                padding: const EdgeInsets.only(bottom: 30),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(
-                        top: getVerticalSize(
-                          24,
-                        ),
-                        bottom: getVerticalSize(
-                          8,
-                        ),
-                      ),
-                      child: SizedBox(
-                        height: getSize(
-                          24,
-                        ),
-                        width: getSize(
-                          24,
-                        ),
-                        child: SvgPicture.asset(
-                          ImageConstant.imgIconplus,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(
-                        top: getVerticalSize(
-                          16,
-                        ),
-                      ),
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: getVerticalSize(
-                          40,
-                        ),
-                        width: getHorizontalSize(
-                          263,
-                        ),
-                        padding: EdgeInsets.only(
-                          left: getHorizontalSize(
-                            30,
-                          ),
-                          top: getVerticalSize(
-                            10,
-                          ),
-                          right: getHorizontalSize(
-                            30,
-                          ),
-                          bottom: getVerticalSize(
-                            10,
-                          ),
-                        ),
-                        decoration: BoxDecoration(
-                          color: ColorConstant.bluegray50,
-                          borderRadius: BorderRadius.circular(
-                            getHorizontalSize(
-                              8,
-                            ),
-                          ),
-                        ),
-                        child: Text(
-                          'Type something...',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: ColorConstant.bluegray400,
-                            fontSize: getFontSize(
-                              14,
-                            ),
-                            fontFamily: 'General Sans',
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(
-                        top: getVerticalSize(
-                          24,
-                        ),
-                        bottom: getVerticalSize(
-                          8,
-                        ),
-                      ),
-                      child: SizedBox(
-                        height: getSize(
-                          24,
-                        ),
-                        width: getSize(
-                          24,
-                        ),
-                        child: SvgPicture.asset(
-                          ImageConstant.imgIconmicro,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                    ),
-                  ],
                 ),
               ),
             ),
